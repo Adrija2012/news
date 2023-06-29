@@ -8,9 +8,9 @@ export default function Header({getNews,languageDeterminer}) {
     }
     return (
         <div>
-            <nav className="navbar navbar-expand-lg bg-warning">
+            <nav className="navbar navbar-expand-lg bg-warning" >
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">
+                    <a style={{fontSize: "25px"}} className="navbar-brand" href="#">
                         Paris News
                     </a>
                     <button
@@ -27,12 +27,13 @@ export default function Header({getNews,languageDeterminer}) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">
+                                <a style={{fontSize: "20px"}} className="nav-link active" aria-current="page" href="#">
                                     Home
                                 </a>
                             </li>
                             <li className="nav-item dropdown">
                                 <a
+                                   style={{fontSize: "20px"}}
                                     className="nav-link dropdown-toggle"
                                     href="#"
                                     role="button"
@@ -63,14 +64,15 @@ export default function Header({getNews,languageDeterminer}) {
                         </ul>
                         <form onSubmit= {formSubmit} className="d-flex" role="search">
                             <input
+                            style={{fontSize: "20px"}}
                                 className="form-control me-2"
                                 type="search"
                                 placeholder="Search"
                                 aria-label="Search"
                                 onChange= {(e)=> changeUserValue(e.currentTarget.value)}
                             />
-                            <button className="btn btn-outline-success" type="submit">
-                                Search
+                            <button className="btn btn-outline-success" style={{fontSize: "19px", width: "190px"}} type="submit">
+                               Search News
                             </button>
                         </form>
                     </div>
